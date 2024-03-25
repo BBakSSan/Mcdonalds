@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+/* 전체 라이스페이퍼 */
+.content{
+    border: 1px solid black;
+    width: 1200px;
+}
+.visualArea{
+    position: relative;
+    width: 1200px;
+}
+.visualArea .banner{
+    width: 100%;
+    vertical-align: left;
+}
+.visualArea .banner-text{
+   padding: 5px;
+   position: absolute;
+}
+/* .visualArea .inner ul li a{
+   text-decoration: none;
+   padding-bottom: 15px;
+} */
+/* 배너이미지 이미지 그자체 */
+/* .visualArea .inner img{
+    max-width: 100%;
+    min-height:100%;
+    color: #292929; 
+    margin-bottom: 20px;
+} */
+/* 제품등록된 수 */
+.pNumber{
+    border: 1px solid black;
+    width: 1200px;
+    padding:10px ;
+    background-color: aquamarine;
+}
+/* 메뉴콘텐츠 시작부분 */
+.menuContent{
+    border: 2px solid rgb(73, 73, 73);
+    width: 1200px;
+    height: 100%;
+    position: relative;
+    background-color: gold;
+}
+/* 메뉴영역 */
+.mcMenuArea{
+    border: 1px solid rgb(84, 84, 84);
+    width: 1200px;
+    height: 100%;
+}
+/* 메뉴영역의 탭전환 부분 */
+.menuContent .tab{
+    text-align: center;
+}
+/* 메뉴영역의 탭 */
+.menuContent .tab a{
+    text-decoration: none;
+    color: black;
+}
+/* 탭의 속성 바꿔줌 */
+.tab a:first-child{
+    color: red;
+    font-weight: bold;
+}
+/* 메뉴를 감싸줌 */
+.menu-List{
+    border: 1px solid black;
+    width: 1100px;
+    text-align: center;
+    display: inline-block;
+    background-color: pink;
+}
+/* 각각의 메뉴를 감싸주는 박스 */
+.menuBox{
+    border: 1px solid#f8f8f8;
+    display: inline-block;
+    width: 286px;
+    height: 288px;
+    margin-top : 17px;
+    margin-left : 10px;
+    background: #F8F8F8;
+    text-align: center;border-radius: 10px;
+}
+/* 메뉴에 갖다댔을때 일어나는 효과 */
+.menuBox:hover{
+    border: 2px solid orange;
+    background-color: #fff;
+}
+/* 메뉴안에 이미지 속성 */
+.thum img{
+    width:230px;
+    height: 160px;
+    padding: 0px;
+    margin-top: 17px ;
+}
+/* a태그 속성 밑줄제거 */
+a{
+    text-decoration: none;
+}
+/* 상품명 속성 */
+.name{
+    margin-top: 20px;
+}
+/* 상품이름 1 */
+.kor{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+/* 상품이름2 */
+.eng{
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+.menu-List li:nth-of-type(n+7):nth-of-type(-n+18){
+    display:none;
+}
+/* 버튼을 포함한 영역 */
+.btnBox{
+    border: 2px solid black;
+    height: 240px;
+}
+/* 버튼속성 */
+.btn{
+    margin-top: 50px;
+    text-align: center;
+    background-color: greenyellow;
+}

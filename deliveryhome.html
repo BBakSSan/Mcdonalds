@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="resourse/css/deliveryStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <main class="main">
+        <div class="wrap">
+            <div class="wrapper">
+                <!--header-->
+                <div id="head">
+                    <div class="top">
+                        <div id="topbar2">
+                            <div id="topbar3">
+                                <ul>
+                                    <li><a href="">로그인</a></li>
+                                    <li> | </li>
+                                    <li><a href="">주문조회</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--navbar-->
+                <nav class="topnav">
+                    <div class="nav">
+                        <div id="navbar">
+                            <div id="n2">
+                                 <ul class="navbarEtc">
+                                    <li><a href=""><img src="resourse/image/McDelivery/header/mcdelivery_logo_ko.jpg" alt="" style="height:100%; width: 100%;"></a></li>
+                                    <li><a href="">메뉴</a></li>
+                                    <li><a href="">마이페이지</a></li>
+                                    <li id="etcInfor">기타정보
+                                         <ul class="etcInf">
+                                            <li><a href="">이용약관</a></li>
+                                            <li><a href="">개인정보처리방침</a></li>
+                                            <li><a href="">자주 묻는 질문</a></li>
+                                            <li><a href="">과일 칠러 판매 제외 매장</a></li>
+                                            <li><a href="">영양정보/원산지정보/기타정보</a></li>
+                                            <li><a href="">모바일 뭽</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(function () {
+                            $("#etcInfor").hover(function () {
+                                if ($(".etcInf").is(':visible')) {
+                                    $(".etcInf").css("display", "none");
+                                } else {
+                                    $(".etcInf").css("display", "block");
+                                }
+                            });
+                        });
+                    </script>
+                </nav>
+
+                <!--container-->
+                <div class="container">
+                    <section class="content">
+                        <div class="slide" style="position: relative; height: 500px;">
+                            <div class="slideImg" id="area">
+                                <img src="resourse/image/McDelivery/container/1WOS.jpg" alt="">
+                            </div>
+                            <div class="slideImg">
+                                <img src="resourse/image/McDelivery/container/2_WOS.jpg" alt="">
+                            </div>
+                            <div class="slideImg">
+                                <img src="resourse/image/McDelivery/container/3_WOS.jpg" alt="">
+                            </div>
+                            
+                            <div class="logIn logInbox" >
+                                <div class="orderText">
+                                    <p>주문 시작하기</p>
+                                </div>
+                                <div class="orderStart">
+                                    <ul>
+                                        <li><a href="">로그인</a></li>
+                                        <li>|</li>
+                                        <li><a href="">비회원주문</a></li>
+                                    </ul>
+                                    <div>
+                                        <div>
+                                            <form action="">
+                                                <div class="orderArea">
+                                                    <div>
+                                                        <div>
+                                                            <input type="text" placeholder="아이디" id="userName">
+                                                        </div>
+                                                        <div>
+                                                            <input type="password" placeholder="비밀번호" id="userPwd">
+                                                        </div>
+                                                    </div>
+                                                    <div class="orderArea">
+                                                        <input type="checkbox" style="size: 10px;" checked>
+                                                        <label for="">자동로그인</label>
+                                                    </div>
+                                                </div>
+                                                <div class="orderArea orderAreaMiddle">
+                                                    <button class="btn btn-log" type="submit">로그인</button>
+                                                    <p><a href="">비밀번호 찾기</a></p>
+                                                </div>
+                                            </form>
+                                            <div class="orderArea orderAreaend">
+                                                <button class="btn btn-member" type="submit">회원가입</button><br>
+                                                <p style="font-size: small;">회원가입 하시고 다양한 혜택을 누리세요</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dotbox">
+                                <input type="radio" class="dot" name="button" id="first" onclick="slide()" checked>
+                                <input type="radio" class="dot" name="button" id="second" onclick="slide()">
+                                <input type="radio" class="dot" name="button" id="third" onclick="slide()">
+                            </div>
+                        </div>
+                    </section>
+                    <script>
+                        function slide() {
+                            let dots = document.getElementsByClassName("dot");
+                            let imgs = document.getElementsByClassName("slideImg");
+
+                            for (let i = 0; i < imgs.length; i++) {
+                                imgs[i].style.display = "none";
+                            };
+                            for (let i = 0; i < dots.length; i++) {
+                                if (dots[i].checked) {
+                                    imgs[i].style.display = 'block';
+                                }
+                            };
+                        }
+                    </script>
+                    <br>
+                    <section>
+                        <div class="line"></div>
+                    </section>
+                    <section>
+                        <div style="position: relative; height: 500px;">
+                            <h1>맥딜리버리 이용방법!!! </h1>
+                            <p><a href=""><img src="resourse/image/McDelivery/container/how_mcdelivery_works_ko.png" alt=""></a></p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <div class="global-footer">
+            <div class="footer">
+                <div class="footernav">
+                    <div></div>
+                    <div class="footer1">
+                        <h3>메뉴</h3>
+                        <ul>
+                            <li><a href="">추천메뉴</a></li>
+                            <li><a href="">버거 & 세트</a></li>
+                            <li><a href="">스낵 & 사이드</a></li>
+                            <li><a href="">음료</a></li>
+                            <li><a href="">디저트</a></li>
+                            <li><a href="">해미밀</a></li>
+                            <li><a href="">메뉴 다운로드</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer1">
+                        <h3>기타정보</h3>
+                        <ul class="">
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="" style="color: rgb(240, 240, 79);font-weight: bold;">개인정보 처리방침</a></li>
+                            <li><a href="">자주 묻는 질문</a></li>
+                            <li><a href="">과일 칠러 판매 제외 매장</a></li>
+                            <li><a href="">영양정보/원산지 정보/기타 정보</a></li>
+                            <li><a href="">모바일 웹</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer1">
+                        <h3>팔로우</h3>
+                        <ul>
+                            <li><a href=""><img src="img/ficon.png" alt="">페이스북</a></li>
+                            <li><a href=""><img src="img/iicon.png" alt="">인스타그램</a></li>
+                            <li><a href=""><img src="img/yicon.png" alt="">유튜브</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-low">
+                <div>
+                    <div>한국맥도날드(유) | 대표자: 앤토니 마티네즈 | 서울특별시 종로구 종로 51 종로타워 14층 | 전화번호: 1600-5252 | 사업자등록번호:
+                        101-81-26409
+                        |
+                        호스팅서비스 제공자: 아마존 웹 서비스 <br><br></div>
+                    <div>Copyright © 2014 All Rights Reserved By McDonald's™</div>
+                    <div>골든 아치 로고와 "i'm lovin' it"은 맥도날드 고유의 상표입니다.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
